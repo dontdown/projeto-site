@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='css/animated.css'>
+	<link href="css/fontawesome.css" rel="stylesheet">
+    <!-- Font Awesome 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title> Teste 1</title>
+
+    <!-- Removes the "000webhost" Logo -->
+    <style>
+		img[alt="www.000webhost.com"] {
+			display: none;
+		}
+	</style>
+
+</head>
+<body>
+    <section>
+        <div id='body-animated'></div>
+        <div id='title'>
+			<h1>M O O N P R I V . T K</h1>
+		</div>
+
+        <div class="side" id="side1">
+            <video src="img/test.mp4" type="video/mp4" autoplay loop muted> </video>
+        </div>
+        
+        <div class="side" id="side2">
+            <video src="img/test.mp4" type="video/mp4" autoplay loop muted> </video>
+        </div>
+    </section>
+
+    <div class="content">
+    <center>
+        <img src='img/logo_effect_light.png' style='width: 240px; height: 240px;'>
+        <h2>Seja bem vindo!</h2>
+        <p>Abaixo estão minhas redes sociais, link para o servidor no discord, etc...</p>
+    </center>
+<br>
+<br>
+            <!-- Social Media Icons-->
+		<div class="animate">
+			<h3>
+                <a href="https://discord.gg/dzWNkBuVVy"><i class="fab fa-discord"></i></a>
+				<a href="https://twitter.com/sodium00p"><i class="fab fa-twitter"></i></a>        
+				<a href="https://steamcommunity.com/id/paohvh/"><i class="fab fa-steam"></i></a>
+                <a href="https://www.twitch.tv/paozinho1v9"><i class="fab fa-twitch"></i></a>		
+			</h3>
+		</div>
+
+    </div>
+
+    <script>
+        side1 = document.getElementById('side1');
+        side2 = document.getElementById('side2');
+
+        window.addEventListener('scroll', function(){
+            side1.style.left = -window.pageYOffset+'px';
+            side2.style.left = window.pageYOffset+'px';
+        })
+    </script>
+
+</body>
+</html>
